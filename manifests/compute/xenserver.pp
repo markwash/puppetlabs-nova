@@ -27,6 +27,7 @@ class nova::compute::xenserver(
     'xenapi_vif_driver': value => 'nova.virt.xenapi.vif.XenAPIOpenVswitchDriver';
     'xenapi_ovs_integration_bridge': value => 'xapi0';
     'glance_num_retries': value => '5';
+    'disable_process_locking': value => 'true';
   }
 
   package { 'XenAPI':
